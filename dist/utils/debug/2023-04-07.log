@@ -1,0 +1,60 @@
+2023-04-07 17:06:21 info: =================================
+2023-04-07 17:06:21 info: ======= ENV: production =======
+2023-04-07 17:06:21 info: 🚀 App listening on the port 3001
+2023-04-07 17:06:21 info: =================================
+2023-04-07 17:06:21 error: DB: MongoDB Connection error: Authentication failed.
+2023-04-07 17:11:11 info: =================================
+2023-04-07 17:11:11 info: ======= ENV: production =======
+2023-04-07 17:11:11 info: 🚀 App listening on the port 3001
+2023-04-07 17:11:11 info: =================================
+2023-04-07 17:11:11 error: DB: MongoDB Connection error: Authentication failed.
+2023-04-07 17:12:33 info: =================================
+2023-04-07 17:12:33 info: ======= ENV: development =======
+2023-04-07 17:12:33 info: 🚀 App listening on the port 3001
+2023-04-07 17:12:33 info: =================================
+2023-04-07 17:23:01 info: ::1 - - [07/Apr/2023:12:23:01 +0000] "POST /user HTTP/1.1" 404 144 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:23:31 info: ::1 - - [07/Apr/2023:12:23:31 +0000] "POST /user HTTP/1.1" 404 144 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:23:33 info: ::1 - - [07/Apr/2023:12:23:33 +0000] "POST /user HTTP/1.1" 404 144 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:24:09 info: =================================
+2023-04-07 17:24:09 info: ======= ENV: development =======
+2023-04-07 17:24:09 info: 🚀 App listening on the port 3001
+2023-04-07 17:24:09 info: =================================
+2023-04-07 17:24:16 info: ::1 - - [07/Apr/2023:12:24:16 +0000] "POST /user HTTP/1.1" 201 233 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:31:23 info: ::1 - - [07/Apr/2023:12:31:23 +0000] "POST /user HTTP/1.1" 201 235 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:32:11 error: [GET] /user/64300d1bd4ab6d001b005219 >> StatusCode:: 404, Message:: Authentication token missing
+2023-04-07 17:32:11 info: ::1 - - [07/Apr/2023:12:32:11 +0000] "GET /user/64300d1bd4ab6d001b005219 HTTP/1.1" 404 42 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:33:06 error: [GET] /user/64300d1bd4ab6d001b005219 >> StatusCode:: 404, Message:: Authentication token missing
+2023-04-07 17:33:06 info: ::1 - - [07/Apr/2023:12:33:06 +0000] "GET /user/64300d1bd4ab6d001b005219 HTTP/1.1" 404 42 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:33:06 error: [GET] /user/64300d1bd4ab6d001b005219 >> StatusCode:: 404, Message:: Authentication token missing
+2023-04-07 17:33:06 info: ::1 - - [07/Apr/2023:12:33:06 +0000] "GET /user/64300d1bd4ab6d001b005219 HTTP/1.1" 404 42 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:33:16 info: =================================
+2023-04-07 17:33:16 info: ======= ENV: development =======
+2023-04-07 17:33:16 info: 🚀 App listening on the port 3001
+2023-04-07 17:33:16 info: =================================
+2023-04-07 17:33:19 info: ::1 - - [07/Apr/2023:12:33:19 +0000] "GET /user/64300d1bd4ab6d001b005219 HTTP/1.1" 200 153 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:44:54 info: =================================
+2023-04-07 17:44:54 info: ======= ENV: development =======
+2023-04-07 17:44:54 info: 🚀 App listening on the port 3001
+2023-04-07 17:44:54 info: =================================
+2023-04-07 17:45:12 info: ::1 - - [07/Apr/2023:12:45:12 +0000] "POST /user HTTP/1.1" 201 224 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:45:22 info: ::1 - - [07/Apr/2023:12:45:22 +0000] "GET /user/64301058af9ba14bd88cfcef HTTP/1.1" 200 142 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:46:20 error: [POST] /user >> StatusCode:: 409, Message:: This username samin0300 already exists
+2023-04-07 17:46:20 info: ::1 - - [07/Apr/2023:12:46:20 +0000] "POST /user HTTP/1.1" 409 52 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:46:26 info: ::1 - - [07/Apr/2023:12:46:26 +0000] "GET /user/64301058af9ba14bd88cfcef HTTP/1.1" 200 142 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:48:28 error: [POST] /login >> StatusCode:: 409, Message:: Password is not matching
+2023-04-07 17:48:28 info: ::1 - - [07/Apr/2023:12:48:28 +0000] "POST /login HTTP/1.1" 409 38 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:48:32 info: ::1 - - [07/Apr/2023:12:48:32 +0000] "POST /login HTTP/1.1" 200 419 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:49:23 info: =================================
+2023-04-07 17:49:23 info: ======= ENV: development =======
+2023-04-07 17:49:23 info: 🚀 App listening on the port 3001
+2023-04-07 17:49:23 info: =================================
+2023-04-07 17:49:33 info: =================================
+2023-04-07 17:49:33 info: ======= ENV: development =======
+2023-04-07 17:49:33 info: 🚀 App listening on the port 3001
+2023-04-07 17:49:33 info: =================================
+2023-04-07 17:49:52 info: ::1 - - [07/Apr/2023:12:49:52 +0000] "GET /user/64301058af9ba14bd88cfcef HTTP/1.1" 200 142 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:49:53 info: ::1 - - [07/Apr/2023:12:49:53 +0000] "GET /user/64301058af9ba14bd88cfcef HTTP/1.1" 200 142 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:49:53 info: ::1 - - [07/Apr/2023:12:49:53 +0000] "GET /user/64301058af9ba14bd88cfcef HTTP/1.1" 200 142 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:49:54 info: ::1 - - [07/Apr/2023:12:49:54 +0000] "GET /user/64301058af9ba14bd88cfcef HTTP/1.1" 200 142 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:49:54 info: ::1 - - [07/Apr/2023:12:49:54 +0000] "GET /user/64301058af9ba14bd88cfcef HTTP/1.1" 200 142 "-" "PostmanRuntime/7.31.3"
+2023-04-07 17:50:31 info: ::1 - - [07/Apr/2023:12:50:31 +0000] "GET /user HTTP/1.1" 200 392 "-" "PostmanRuntime/7.31.3"

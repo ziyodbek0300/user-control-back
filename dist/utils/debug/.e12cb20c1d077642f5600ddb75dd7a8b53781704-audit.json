@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/ziyodbek.ahmadjonov/Documents/programming/nodejs/phono/dist/utils/debug/.e12cb20c1d077642f5600ddb75dd7a8b53781704-audit.json",
+    "files": [
+        {
+            "date": 1680869034742,
+            "name": "/Users/ziyodbek.ahmadjonov/Documents/programming/nodejs/phono/dist/utils/debug/2023-04-07.log",
+            "hash": "05540d549d4fdc174728e91090ddf009e35b7691348e3c6af2c029f8ed2cb790"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 Object.defineProperty(exports, "default", {
     enumerable: true,
-    get: ()=>AdminService
+    get: ()=>UserService
 });
 const _bcrypt = require("bcrypt");
 const _httpException = require("../exceptions/httpException");
@@ -28,7 +28,7 @@ function _interop_require_default(obj) {
         default: obj
     };
 }
-let AdminService = class AdminService {
+let UserService = class UserService {
     async findAllUser(query) {
         return this.users.find(query).select("-__v -password");
     }
@@ -40,38 +40,38 @@ let AdminService = class AdminService {
         if (!findUser) throw new _httpException.HttpException(409, "User doesn't exist");
         return findUser;
     }
-    async createAdmin(adminData) {
-        if ((0, _util.isEmpty)(adminData)) throw new _httpException.HttpException(400, "adminData is empty");
-        const findAdmin = await this.users.findOne({
-            username: adminData.username
+    async createUser(userData) {
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "userData is empty");
+        const findUser = await this.users.findOne({
+            username: userData.username
         });
-        if (findAdmin) throw new _httpException.HttpException(409, `This username ${adminData.username} already exists`);
-        adminData.password = await (0, _bcrypt.hash)(adminData.password, 10);
-        return this.users.create(adminData);
+        if (findUser) throw new _httpException.HttpException(409, `This username ${userData.username} already exists`);
+        userData.password = await (0, _bcrypt.hash)(userData.password, 10);
+        return this.users.create(userData);
     }
-    async updateAdmin(adminId, adminData) {
-        if ((0, _util.isEmpty)(adminData)) throw new _httpException.HttpException(400, "adminData is empty");
-        if (adminData.username) {
-            const findAdmin = await this.users.findOne({
+    async updateUser(userId, userData) {
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "userData is empty");
+        if (userData.username) {
+            const findUser = await this.users.findOne({
                 _id: {
-                    $ne: adminId
+                    $ne: userId
                 },
-                username: adminData.username
+                username: userData.username
             });
-            if (findAdmin) throw new _httpException.HttpException(409, `This username ${adminData.username} already exists`);
+            if (findUser) throw new _httpException.HttpException(409, `This username ${userData.username} already exists`);
         }
-        if (adminData.password) {
-            adminData.password = await (0, _bcrypt.hash)(adminData.password, 10);
+        if (userData.password) {
+            userData.password = await (0, _bcrypt.hash)(userData.password, 10);
         }
-        const updateUserById = await this.users.findByIdAndUpdate(adminId, adminData, {
+        const updateUserById = await this.users.findByIdAndUpdate(userId, userData, {
             new: true
         }).select("-__v -password");
-        if (!updateUserById) throw new _httpException.HttpException(409, "Admin doesn't exist");
+        if (!updateUserById) throw new _httpException.HttpException(409, "user doesn't exist");
         return updateUserById;
     }
-    async deleteAdmin(userId) {
+    async deleteUser(userId) {
         const deleteUserById = await this.users.findByIdAndDelete(userId).select("-__v -password");
-        if (!deleteUserById) throw new _httpException.HttpException(409, "Admin doesn't exist");
+        if (!deleteUserById) throw new _httpException.HttpException(409, "user doesn't exist");
         return deleteUserById;
     }
     constructor(){

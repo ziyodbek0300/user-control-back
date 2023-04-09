@@ -41,10 +41,8 @@ function _interop_require_default(obj) {
 let App = class App {
     listen() {
         this.app.listen(this.port, ()=>{
-            _logger.logger.info(`=================================`);
             _logger.logger.info(`======= ENV: ${this.env} =======`);
             _logger.logger.info(`🚀 App listening on the port ${this.port}`);
-            _logger.logger.info(`=================================`);
         });
     }
     getServer() {

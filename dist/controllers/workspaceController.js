@@ -4,9 +4,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 Object.defineProperty(exports, "default", {
     enumerable: true,
-    get: ()=>TodoController
+    get: ()=>WorkspaceController
 });
-const _todoServeice = _interop_require_default(require("../services/todoServeice"));
+const _workspaceServices = _interop_require_default(require("../services/workspaceServices"));
 function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -25,69 +25,69 @@ function _interop_require_default(obj) {
         default: obj
     };
 }
-let TodoController = class TodoController {
+let WorkspaceController = class WorkspaceController {
     constructor(){
-        _define_property(this, "todoService", new _todoServeice.default());
-        _define_property(this, "getTodos", async (req, res, next)=>{
+        _define_property(this, "workspaceService", new _workspaceServices.default());
+        _define_property(this, "getAllWorkspaces", async (req, res, next)=>{
             try {
-                const findAllTodoData = await this.todoService.findAllTodos(req.query);
+                const findAllWorkspaces = await this.workspaceService.findAllWorkspaces(req.query);
                 res.status(200).json({
-                    data: findAllTodoData,
+                    data: findAllWorkspaces,
                     message: "findAll"
                 });
             } catch (error) {
                 next(error);
             }
         });
-        _define_property(this, "getByUserId", async (req, res, next)=>{
+        _define_property(this, "getAllByUserId", async (req, res, next)=>{
             try {
-                const findByUserId = await this.todoService.findUserById(req.params.id);
+                const findAllByUserId = await this.workspaceService.findAllWorkspacesByUserId(req.params.userId);
                 res.status(200).json({
-                    data: findByUserId,
-                    message: "findByUserId"
+                    data: findAllByUserId,
+                    message: "findAllByUser"
                 });
             } catch (error) {
                 next(error);
             }
         });
-        _define_property(this, "getOne", async (req, res, next)=>{
+        _define_property(this, "getOneById", async (req, res, next)=>{
             try {
-                const findOneById = await this.todoService.findOneTodo(req.params.id);
+                const findOneWorkspaceData = await this.workspaceService.findOneWorkspace(req.params.id);
                 res.status(200).json({
-                    data: findOneById,
+                    data: findOneWorkspaceData,
                     message: "findOne"
                 });
             } catch (error) {
                 next(error);
             }
         });
-        _define_property(this, "createTodo", async (req, res, next)=>{
+        _define_property(this, "createWorkspace", async (req, res, next)=>{
             try {
-                const createTodoData = await this.todoService.createTodo(req.body);
+                const createWorkspaceData = await this.workspaceService.createWorkspace(req.body);
                 res.status(201).json({
-                    data: createTodoData,
+                    data: createWorkspaceData,
                     message: "created"
                 });
             } catch (error) {
                 next(error);
             }
         });
-        _define_property(this, "updateTodo", async (req, res, next)=>{
+        _define_property(this, "updateWorkpace", async (req, res, next)=>{
             try {
-                const updateTodoData = await this.todoService.updateTodo(req.params.id, req.body);
+                const updateWorkspaceData = await this.workspaceService.updateWorkspace(req.params.id, req.body);
                 res.status(200).json({
-                    data: updateTodoData,
+                    data: updateWorkspaceData,
                     message: "updated"
                 });
             } catch (error) {
                 next(error);
             }
         });
-        _define_property(this, "deleteTodo", async (req, res, next)=>{
+        _define_property(this, "deleteWorkspace", async (req, res, next)=>{
             try {
-                const deleteTodoData = await this.todoService.deleteTodo(req.params.id);
+                const deleteWorkspaceData = await this.workspaceService.deleteWorkspace(req.params.id);
                 res.status(200).json({
-                    data: deleteTodoData,
+                    data: deleteWorkspaceData,
                     message: "deleted"
                 });
             } catch (error) {
@@ -97,4 +97,4 @@ let TodoController = class TodoController {
     }
 };
 
-//# sourceMappingURL=todoController.js.map
+//# sourceMappingURL=workspaceController.js.map

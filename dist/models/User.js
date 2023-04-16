@@ -29,6 +29,8 @@ const userSchema = new _mongoose.Schema({
         type: String,
         default: "user"
     }
+}, {
+    timestamps: true
 });
 const _default = (0, _mongoose.model)("User", userSchema);
 

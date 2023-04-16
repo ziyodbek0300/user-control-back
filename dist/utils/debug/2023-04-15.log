@@ -1,0 +1,43 @@
+2023-04-15 05:13:55 info: ======= ENV: development =======
+2023-04-15 05:13:55 info: 🚀 App listening on the port 3001
+2023-04-15 05:14:31 info: ::1 - - [15/Apr/2023:00:14:31 +0000] "POST /login HTTP/1.1" 200 419 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:16:37 info: ::1 - - [15/Apr/2023:00:16:37 +0000] "GET /todos HTTP/1.1" 404 144 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:17:14 info: ======= ENV: development =======
+2023-04-15 05:17:14 info: 🚀 App listening on the port 3001
+2023-04-15 05:17:18 info: ::1 - - [15/Apr/2023:00:17:18 +0000] "GET /todos HTTP/1.1" 404 144 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:17:19 info: ::1 - - [15/Apr/2023:00:17:19 +0000] "GET /todos HTTP/1.1" 404 144 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:17:19 info: ::1 - - [15/Apr/2023:00:17:19 +0000] "GET /todos HTTP/1.1" 404 144 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:17:38 info: ======= ENV: development =======
+2023-04-15 05:17:38 info: 🚀 App listening on the port 3001
+2023-04-15 05:17:38 info: ::1 - - [15/Apr/2023:00:17:38 +0000] "GET /todos HTTP/1.1" 200 31 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:19:12 info: ::1 - - [15/Apr/2023:00:19:12 +0000] "GET /user HTTP/1.1" 200 392 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:19:20 info: ::1 - - [15/Apr/2023:00:19:20 +0000] "POST /todos HTTP/1.1" 201 155 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:19:27 info: ::1 - - [15/Apr/2023:00:19:27 +0000] "GET /todos HTTP/1.1" 200 149 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:25:37 error: [GET] /todos/6439ed88dc7d6ace5a44e938 >> StatusCode:: 409, Message:: Todo doesn't exist
+2023-04-15 05:25:37 info: ::1 - - [15/Apr/2023:00:25:37 +0000] "GET /todos/6439ed88dc7d6ace5a44e938 HTTP/1.1" 409 32 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:26:27 info: ::1 - - [15/Apr/2023:00:26:27 +0000] "GET /user HTTP/1.1" 200 392 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:26:32 info: ::1 - - [15/Apr/2023:00:26:32 +0000] "GET /todos/64300b70d4ab6d001b005216 HTTP/1.1" 200 152 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:30:21 info: ======= ENV: development =======
+2023-04-15 05:30:21 info: 🚀 App listening on the port 3001
+2023-04-15 05:30:25 info: ::1 - - [15/Apr/2023:00:30:25 +0000] "GET /todos/64300b70d4ab6d001b005216 HTTP/1.1" 200 154 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:42:43 info: ::1 - - [15/Apr/2023:00:42:43 +0000] "GET /todos HTTP/1.1" 200 149 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:43:19 info: ::1 - - [15/Apr/2023:00:43:19 +0000] "PATCH /todos/6439ed88dc7d6ace5a44e938 HTTP/1.1" 200 140 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:58:30 info: ::1 - - [15/Apr/2023:00:58:30 +0000] "POST /todos HTTP/1.1" 201 156 "-" "PostmanRuntime/7.32.2"
+2023-04-15 05:58:33 info: ::1 - - [15/Apr/2023:00:58:33 +0000] "GET /todos HTTP/1.1" 200 262 "-" "PostmanRuntime/7.32.2"
+2023-04-15 06:01:55 info: ======= ENV: development =======
+2023-04-15 06:01:55 info: 🚀 App listening on the port 3001
+2023-04-15 06:02:51 info: ::1 - - [15/Apr/2023:01:02:51 +0000] "POST /todos/6439ed88dc7d6ace5a44e938 HTTP/1.1" 404 170 "-" "PostmanRuntime/7.32.2"
+2023-04-15 06:02:55 info: ::1 - - [15/Apr/2023:01:02:55 +0000] "POST /todos/6439ed88dc7d6ace5a44e938 HTTP/1.1" 404 170 "-" "PostmanRuntime/7.32.2"
+2023-04-15 06:15:47 info: ::1 - - [15/Apr/2023:01:15:47 +0000] "GET /todos/6439ed88dc7d6ace5a44e938 HTTP/1.1" 200 140 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:13:09 info: ::1 - - [15/Apr/2023:12:13:09 +0000] "GET /todos/6439ed88dc7d6ace5a44e938 HTTP/1.1" 200 140 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:13:38 info: ::1 - - [15/Apr/2023:12:13:38 +0000] "POST /todos HTTP/1.1" 201 155 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:13:53 info: ::1 - - [15/Apr/2023:12:13:53 +0000] "GET /todos/643a94f2880d0410a084f809 HTTP/1.1" 200 147 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:16:48 info: ======= ENV: development =======
+2023-04-15 17:16:48 info: 🚀 App listening on the port 3001
+2023-04-15 17:17:08 info: ::1 - - [15/Apr/2023:12:17:08 +0000] "POST /user HTTP/1.1" 201 303 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:17:50 info: ::1 - - [15/Apr/2023:12:17:50 +0000] "POST /todos HTTP/1.1" 201 234 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:17:59 info: ::1 - - [15/Apr/2023:12:17:59 +0000] "GET /todos HTTP/1.1" 200 579 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:18:36 info: ::1 - - [15/Apr/2023:12:18:36 +0000] "DELETE /todos/6439ed88dc7d6ace5a44e938 HTTP/1.1" 200 140 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:18:40 info: ::1 - - [15/Apr/2023:12:18:40 +0000] "GET /todos HTTP/1.1" 200 467 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:18:49 info: ::1 - - [15/Apr/2023:12:18:49 +0000] "DELETE /todos/6439f6b6294661657cc9349d HTTP/1.1" 200 148 "-" "PostmanRuntime/7.32.2"
+2023-04-15 17:18:52 info: ::1 - - [15/Apr/2023:12:18:52 +0000] "GET /todos HTTP/1.1" 200 347 "-" "PostmanRuntime/7.32.2"

@@ -1,0 +1,42 @@
+2023-04-16 11:43:56 info: ======= ENV: development =======
+2023-04-16 11:43:56 info: 🚀 App listening on the port 3001
+2023-04-16 11:44:38 info: ::1 - - [16/Apr/2023:06:44:38 +0000] "GET /workspaces HTTP/1.1" 404 149 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:45:04 info: ======= ENV: development =======
+2023-04-16 11:45:04 info: 🚀 App listening on the port 3001
+2023-04-16 11:45:06 info: ::1 - - [16/Apr/2023:06:45:06 +0000] "GET /workspaces HTTP/1.1" 404 149 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:45:07 info: ::1 - - [16/Apr/2023:06:45:07 +0000] "GET /workspace HTTP/1.1" 200 31 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:47:15 info: ::1 - - [16/Apr/2023:06:47:15 +0000] "GET /user HTTP/1.1" 200 585 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:49:06 error: [POST] /workspace >> StatusCode:: 400, Message:: property title should not exist, property shortTitle should not exist, property description should not exist, property website should not exist, property category should not exist, property type should not exist, property photoUrl should not exist, property userId should not exist, firstName must be longer than or equal to 3 characters,firstName must be shorter than or equal to 50 characters,firstName must be a string, lastName must be longer than or equal to 3 characters,lastName must be shorter than or equal to 50 characters,lastName must be a string, username must be longer than or equal to 5 characters,username must be shorter than or equal to 25 characters,username must match /^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){5,25}[a-zA-Z0-9]$/ regular expression,username must be a string, password must be longer than or equal to 6 characters,password must be a string, role must be one of the following values: admin, user, other, head,role must be a string
+2023-04-16 11:49:06 info: ::1 - - [16/Apr/2023:06:49:06 +0000] "POST /workspace HTTP/1.1" 400 993 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:54:20 info: ======= ENV: development =======
+2023-04-16 11:54:20 info: 🚀 App listening on the port 3001
+2023-04-16 11:54:24 error: [POST] /workspace >> StatusCode:: 400, Message:: property photoUrl should not exist
+2023-04-16 11:54:24 info: ::1 - - [16/Apr/2023:06:54:24 +0000] "POST /workspace HTTP/1.1" 400 48 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:55:00 info: ======= ENV: development =======
+2023-04-16 11:55:00 info: 🚀 App listening on the port 3001
+2023-04-16 11:55:03 info: ::1 - - [16/Apr/2023:06:55:03 +0000] "POST /workspace HTTP/1.1" 201 380 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:57:09 info: ::1 - - [16/Apr/2023:06:57:09 +0000] "GET /workspace HTTP/1.1" 200 374 "-" "PostmanRuntime/7.32.2"
+2023-04-16 11:57:24 info: ::1 - - [16/Apr/2023:06:57:24 +0000] "GET /workspace/643b9bc71278a35b1fd95a10 HTTP/1.1" 200 372 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:01:04 info: ::1 - - [16/Apr/2023:07:01:04 +0000] "GET /workspace/643b9bc71278a35b1fd95a10 HTTP/1.1" 200 372 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:01:53 info: ::1 - - [16/Apr/2023:07:01:53 +0000] "POST /workspace/643b9bc71278a35b1fd95a10 HTTP/1.1" 404 174 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:01:57 info: ::1 - - [16/Apr/2023:07:01:57 +0000] "PATCH /workspace/643b9bc71278a35b1fd95a10 HTTP/1.1" 200 368 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:08:11 info: ::1 - - [16/Apr/2023:07:08:11 +0000] "POST /workspace HTTP/1.1" 201 384 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:08:34 info: ::1 - - [16/Apr/2023:07:08:34 +0000] "DELETE /workspace/643b9edb1278a35b1fd95a1a HTTP/1.1" 200 376 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:08:41 info: ::1 - - [16/Apr/2023:07:08:41 +0000] "GET /workspace HTTP/1.1" 200 370 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:12:41 info: ======= ENV: development =======
+2023-04-16 12:12:41 info: 🚀 App listening on the port 3001
+2023-04-16 12:13:24 info: ::1 - - [16/Apr/2023:07:13:24 +0000] "GET /user HTTP/1.1" 200 585 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:13:30 error: [GET] /workspace/64300b70d4ab6d001b005216 >> StatusCode:: 409, Message:: Workspace doesn't exist
+2023-04-16 12:13:30 info: ::1 - - [16/Apr/2023:07:13:30 +0000] "GET /workspace/64300b70d4ab6d001b005216 HTTP/1.1" 409 37 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:14:05 error: [GET] /workspace/64300b70d4ab6d001b005216 >> StatusCode:: 409, Message:: Workspace doesn't exist
+2023-04-16 12:14:05 info: ::1 - - [16/Apr/2023:07:14:05 +0000] "GET /workspace/64300b70d4ab6d001b005216 HTTP/1.1" 409 37 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:20:03 info: ::1 - - [16/Apr/2023:07:20:03 +0000] "GET /workspace HTTP/1.1" 200 370 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:20:13 error: [GET] /workspace/64300b70d4ab6d001b005216 >> StatusCode:: 409, Message:: Workspace doesn't exist
+2023-04-16 12:20:13 info: ::1 - - [16/Apr/2023:07:20:13 +0000] "GET /workspace/64300b70d4ab6d001b005216 HTTP/1.1" 409 37 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:21:08 info: ======= ENV: development =======
+2023-04-16 12:21:08 info: 🚀 App listening on the port 3001
+2023-04-16 12:21:11 error: [GET] /workspace/64300b70d4ab6d001b005216 >> StatusCode:: 409, Message:: Workspace doesn't exist
+2023-04-16 12:21:11 info: ::1 - - [16/Apr/2023:07:21:11 +0000] "GET /workspace/64300b70d4ab6d001b005216 HTTP/1.1" 409 37 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:21:12 error: [GET] /workspace/64300b70d4ab6d001b005216 >> StatusCode:: 409, Message:: Workspace doesn't exist
+2023-04-16 12:21:12 info: ::1 - - [16/Apr/2023:07:21:12 +0000] "GET /workspace/64300b70d4ab6d001b005216 HTTP/1.1" 409 37 "-" "PostmanRuntime/7.32.2"
+2023-04-16 12:23:47 info: ::1 - - [16/Apr/2023:07:23:47 +0000] "GET /workspace?userId=64300b70d4ab6d001b005216 HTTP/1.1" 200 370 "-" "PostmanRuntime/7.32.2"

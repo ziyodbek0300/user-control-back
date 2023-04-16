@@ -7,14 +7,10 @@ Object.defineProperty(exports, "default", {
     get: ()=>_default
 });
 const _mongoose = require("mongoose");
-const todoSchema = new _mongoose.Schema({
+const boardScheme = new _mongoose.Schema({
     title: {
         type: String,
         required: true
-    },
-    body: {
-        type: String,
-        required: false
     },
     userId: {
         type: _mongoose.Schema.Types.ObjectId,
@@ -24,6 +20,6 @@ const todoSchema = new _mongoose.Schema({
 }, {
     timestamps: true
 });
-const _default = (0, _mongoose.model)("Todo", todoSchema);
+const _default = (0, _mongoose.model)("Board", boardScheme);
 
-//# sourceMappingURL=Todo.js.map
+//# sourceMappingURL=Board.js.map

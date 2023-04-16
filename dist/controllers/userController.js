@@ -52,7 +52,7 @@ let AdminsController = class AdminsController {
         });
         _define_property(this, "createUser", async (req, res, next)=>{
             try {
-                const createUserData = await this.userService.createAdmin(req.body);
+                const createUserData = await this.userService.createUser(req.body);
                 res.status(201).json({
                     data: createUserData,
                     message: "created"
@@ -63,7 +63,7 @@ let AdminsController = class AdminsController {
         });
         _define_property(this, "updateUser", async (req, res, next)=>{
             try {
-                const updateAdminData = await this.userService.updateAdmin(req.params.id, req.body);
+                const updateAdminData = await this.userService.updateUser(req.params.id, req.body);
                 res.status(200).json({
                     data: updateAdminData,
                     message: "updated"
@@ -74,7 +74,7 @@ let AdminsController = class AdminsController {
         });
         _define_property(this, "deleteUser", async (req, res, next)=>{
             try {
-                const deleteAdminData = await this.userService.deleteAdmin(req.params.id);
+                const deleteAdminData = await this.userService.deleteUser(req.params.id);
                 res.status(200).json({
                     data: deleteAdminData,
                     message: "deleted"

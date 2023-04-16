@@ -28,7 +28,7 @@ export default class AdminsController {
 
   public createUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const createUserData: User = await this.userService.createAdmin(
+      const createUserData: User = await this.userService.createUser(
         req.body as CreateUserDto
       );
 
@@ -40,7 +40,7 @@ export default class AdminsController {
 
   public updateUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const updateAdminData: User = await this.userService.updateAdmin(
+      const updateAdminData: User = await this.userService.updateUser(
         req.params.id,
         req.body as CreateUserDto
       );
@@ -53,7 +53,7 @@ export default class AdminsController {
 
   public deleteUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const deleteAdminData: User = await this.userService.deleteAdmin(req.params.id);
+      const deleteAdminData: User = await this.userService.deleteUser(req.params.id);
 
       res.status(200).json({ data: deleteAdminData, message: "deleted" });
     } catch (error) {

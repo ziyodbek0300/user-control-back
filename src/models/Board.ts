@@ -1,14 +1,10 @@
 import { model, Schema, Document } from "mongoose";
-import { Todo } from "@/interfaces/todoInterface";
+import { Board } from "@/interfaces/boardInterface";
 
-const todoSchema: Schema = new Schema({
+const boardScheme: Schema = new Schema({
 	title: {
 		type: String,
 		required: true
-	},
-    body: {
-		type: String,
-		required: false
 	},
     userId: {
 		type: Schema.Types.ObjectId,
@@ -19,4 +15,4 @@ const todoSchema: Schema = new Schema({
 	timestamps: true
 });
 
-export default model<Todo & Document>("Todo", todoSchema);
+export default model<Board & Document>("Board", boardScheme);

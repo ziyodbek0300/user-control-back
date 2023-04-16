@@ -49,7 +49,7 @@ let AuthService = class AuthService {
         };
     }
     async logout(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "adminData is empty");
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "UserData is empty");
         const findUser = await this.users.findOne({
             username: userData.username,
             password: userData.password
@@ -62,7 +62,7 @@ let AuthService = class AuthService {
             _id: user._id
         };
         const secretKey = _env.SECRET_KEY;
-        const expiresIn = 60 * 60 * 20;
+        const expiresIn = 60 * 60 * 100;
         return {
             expiresIn,
             token: (0, _jsonwebtoken.sign)(dataStoredInToken, secretKey, {

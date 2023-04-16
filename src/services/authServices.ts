@@ -9,9 +9,7 @@ import userModel from "@/models/User";
 import { isEmpty } from "@utils/util";
 import any = jasmine.any;
 
-/**
- * Authorization, admin login va logout qilish bo'limi
- */
+
 class AuthService {
     public users = userModel;
 
@@ -35,7 +33,7 @@ class AuthService {
     }
 
     public async logout(userData: User): Promise<User> {
-        if (isEmpty(userData)) throw new HttpException(400, "adminData is empty");
+        if (isEmpty(userData)) throw new HttpException(400, "UserData is empty");
 
         const findUser: User = await this.users
             .findOne({
@@ -52,7 +50,7 @@ class AuthService {
     public createToken(user: User): TokenData {
         const dataStoredInToken: DataStoredInToken = { _id: user._id };
         const secretKey: string = SECRET_KEY;
-        const expiresIn: number = (60 * 60) * 20;
+        const expiresIn: number = (60 * 60) * 100;
 
         return { expiresIn, token: sign(dataStoredInToken, secretKey, { expiresIn }) };
     }

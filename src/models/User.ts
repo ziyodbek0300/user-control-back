@@ -6,7 +6,7 @@ const userSchema: Schema = new Schema({
 		type: String,
 		required: true
 	},
-    lastName: {
+	lastName: {
 		type: String,
 		required: true
 	},
@@ -23,6 +23,8 @@ const userSchema: Schema = new Schema({
 		type: String,
 		default: "user"
 	}
+}, {
+	timestamps: true
 });
 
 export default model<User & Document>("User", userSchema);

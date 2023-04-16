@@ -39,17 +39,6 @@ let WorkspaceController = class WorkspaceController {
                 next(error);
             }
         });
-        _define_property(this, "getAllByUserId", async (req, res, next)=>{
-            try {
-                const findAllByUserId = await this.workspaceService.findAllWorkspacesByUserId(req.params.userId);
-                res.status(200).json({
-                    data: findAllByUserId,
-                    message: "findAllByUser"
-                });
-            } catch (error) {
-                next(error);
-            }
-        });
         _define_property(this, "getOneById", async (req, res, next)=>{
             try {
                 const findOneWorkspaceData = await this.workspaceService.findOneWorkspace(req.params.id);

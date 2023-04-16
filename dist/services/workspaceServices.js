@@ -36,7 +36,7 @@ let WorkspaceServices = class WorkspaceServices {
         if ((0, _util.isEmpty)(_id)) throw new _httpException.HttpException(400, "_id is empty");
         const findWorkspace = await this.workspaces.findOne({
             _id: _id
-        }).select("-__v");
+        }).populate("userId", "_id firstName lastName username role").select("-__v");
         if (!findWorkspace) throw new _httpException.HttpException(409, "Workspace doesn't exist");
         return findWorkspace;
     }
@@ -44,14 +44,6 @@ let WorkspaceServices = class WorkspaceServices {
         if ((0, _util.isEmpty)(_id)) throw new _httpException.HttpException(400, "_id is empty");
         const findWorkspace = await this.workspaces.find({
             _id: _id
-        }).select("-__v");
-        if (!findWorkspace) throw new _httpException.HttpException(409, "Workspace doesn't exist");
-        return findWorkspace;
-    }
-    async findAllWorkspacesByUserId(userId) {
-        if ((0, _util.isEmpty)(userId)) throw new _httpException.HttpException(400, "userId is empty");
-        const findWorkspace = await this.workspaces.find({
-            userId: userId
         }).select("-__v");
         if (!findWorkspace) throw new _httpException.HttpException(409, "Workspace doesn't exist");
         return findWorkspace;

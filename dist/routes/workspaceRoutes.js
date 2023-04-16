@@ -33,7 +33,6 @@ let WorkspaceRoute = class WorkspaceRoute {
     initializeRoutes() {
         this.router.get(`${this.path}`, _authMiddleware.default, this.workspaceController.getAllWorkspaces);
         this.router.get(`${this.path}/:id`, _authMiddleware.default, this.workspaceController.getOneById);
-        this.router.get(`${this.path}/:userId`, _authMiddleware.default, this.workspaceController.getAllByUserId);
         this.router.post(`${this.path}`, (0, _validationMiddelware.default)(_workspaceDto.CreateWorkspace, "body"), this.workspaceController.createWorkspace);
         this.router.patch(`${this.path}/:id`, _authMiddleware.default, (0, _validationMiddelware.default)(_workspaceDto.UpdateWorkspaceDto, "body", true), this.workspaceController.updateWorkpace);
         this.router.delete(`${this.path}/:id`, _authMiddleware.default, this.workspaceController.deleteWorkspace);

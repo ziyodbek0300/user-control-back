@@ -18,6 +18,7 @@ export default class WorkspaceServices {
 
         const findWorkspace: Workspace = await this.workspaces
             .findOne({ _id: _id })
+            .populate("userId", "_id firstName lastName username role")
             .select("-__v");
 
         if (!findWorkspace) throw new HttpException(409, "Workspace doesn't exist");
@@ -30,6 +31,7 @@ export default class WorkspaceServices {
 
         const findWorkspace: Workspace[] = await this.workspaces
             .find({ _id: _id })
+            .populate("userId", "_id firstName lastName username role")
             .select("-__v");
 
         if (!findWorkspace) throw new HttpException(409, "Workspace doesn't exist");
